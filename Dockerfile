@@ -1,8 +1,8 @@
 FROM registry.redhat.io/rhel8/mariadb-105
 
 # needed for intialization
-ENV MYSQL_USER=usr1
-ENV MYSQL_PASSWORD=pwd1
+ENV MYSQL_USER=usr01
+ENV MYSQL_PASSWORD=pwd01
 ENV MYSQL_DATABASE=living
 
 # Copy our sql scripts
