@@ -6,7 +6,7 @@ ENV MYSQL_PASSWORD=pwd1
 ENV MYSQL_DATABASE=living
 
 # Copy our sql scripts
-COPY 1_create.sql /tmp/
+COPY create.sql /tmp/
 
 # Put our script to create db and tables in the init path
 COPY run.sh /usr/share/container-scripts/mysql/init/
