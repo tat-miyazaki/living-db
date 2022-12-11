@@ -11,6 +11,11 @@ COPY create.sql /tmp/
 # Put our script to create db and tables in the init path
 COPY run.sh /usr/share/container-scripts/mysql/init/
 
+RUN echo [mariadb] >>  /etc/my.cnf
+RUN echo character-set-server=utf8mb4 >>  /etc/my.cnf
+RUN echo [client-mariadb] >>  /etc/my.cnf
+RUN echo default-character-set=utf8mb4 >>  /etc/my.cnf
+
 # Expose the correct port for MariaDB
 EXPOSE 3306
 
