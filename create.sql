@@ -14,6 +14,7 @@ create table persons (
   extension1 text,
   extension2 text,
   imageurl text,
+  taste text,
   fixed int,
   favcount int
 );
